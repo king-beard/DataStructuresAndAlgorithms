@@ -1,13 +1,13 @@
 ﻿namespace DataStructuresAndAlgorithms.DataStructures.Arrays
 {
-    public static class SolutionTwoSum
+    public static class TwoSumResolver
     {
         /// <summary>
-        /// Indices of the two numbers such that they add up to target.
+        /// The two numbers such that they add up to target.
         /// </summary>
         /// <param name="nums">array of integers</param>
         /// <param name="target">an integer</param>
-        /// <returns>indices of the two numbers.</returns>
+        /// <returns>indices of the two numbers such that they add up to target.</returns>
         public static int[] TwoSum(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++) 
@@ -19,11 +19,11 @@
         }
 
         /// <summary>
-        /// Indices of the two numbers such that they add up to target. Dictionary (HashMap).
+        /// The two numbers such that they add up to target. Dictionary (HashMap).
         /// </summary>
         /// <param name="nums">array of integers</param>
         /// <param name="target">an integer</param>
-        /// <returns>indices of the two numbers.</returns>
+        /// <returns>indices of the two numbers such that they add up to target.</returns>
         public static int[] TwoSumOptimized(int[] nums, int target)
         {
             Dictionary<int, int> map = [];

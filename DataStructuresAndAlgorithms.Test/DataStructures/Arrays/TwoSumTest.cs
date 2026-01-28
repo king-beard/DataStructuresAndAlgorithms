@@ -2,7 +2,7 @@
 
 namespace DataStructuresAndAlgorithms.Test.DataStructures.Arrays
 {
-    public class ExercisesTest
+    public class TwoSumTest
     {
         [Fact]
         public void TwoSum()
@@ -12,7 +12,7 @@ namespace DataStructuresAndAlgorithms.Test.DataStructures.Arrays
             int target = 9;
 
             // Act
-            int[] index = SolutionTwoSum.TwoSum(nums, target);
+            int[] index = TwoSumResolver.TwoSum(nums, target);
 
             // Assert
             Assert.Equal(1, index[0]);
@@ -27,7 +27,7 @@ namespace DataStructuresAndAlgorithms.Test.DataStructures.Arrays
             int target = 9;
 
             // Act
-            int[] index = SolutionTwoSum.TwoSumOptimized(nums, target);
+            int[] index = TwoSumResolver.TwoSumOptimized(nums, target);
 
             // Assert
             Assert.Equal(1, index[0]);
