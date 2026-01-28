@@ -2,7 +2,7 @@
 {
     public static class Exercises
     {
-        public static void CountFrequencies(int[] nums)
+        public static Dictionary<int, int> CountFrequencies(int[] nums)
         {
             Dictionary<int, int> frecuencies = [];
 
@@ -12,8 +12,7 @@
                 else
                     frecuencies[nums[i]] = 1;
 
-            foreach (KeyValuePair<int, int> num in frecuencies)
-                Console.WriteLine($"{num.Key} -> {num.Value}");
+            return frecuencies;
         }
     }
 }
